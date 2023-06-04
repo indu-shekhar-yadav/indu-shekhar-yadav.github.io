@@ -76,6 +76,8 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
+		
 	}
 
 	*, *:before, *:after {
@@ -4158,4 +4160,20 @@ input, select, textarea {
 	.logo{
 		width: 15px;
 	}
-	
+.to-top {
+		position: fixed;
+		width: 40px;
+		height: 40px;
+		background: #e44c65;
+		bottom: 30px;
+		right: 20px;
+		border-radius: 50%;
+
+		text-decoration: none;
+		text-align: center;
+		line-height: 40px;
+		color: #181920;
+		font-size: 22px;
+
+
+	  }
