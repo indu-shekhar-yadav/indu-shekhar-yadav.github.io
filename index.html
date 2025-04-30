@@ -4,13 +4,40 @@
 		<title>Indu Shekhar Yadav</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.music-player {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				margin-top: 20px;
+			}
+			.play-button {
+				background: none;
+				border: none;
+				color: #ffffff;
+				font-size: 2em;
+				cursor: pointer;
+				transition: color 0.3s;
+			}
+			.play-button:hover {
+				color: #1db954; /* Spotify green */
+			}
+			.spotify-label {
+				color: #ffffff;
+				font-size: 1.2em;
+				font-weight: bold;
+				text-decoration: none;
+			}
+			.spotify-label:hover {
+				color: #1db954;
+			}
+		</style>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
-			
 			<!-- Header -->
 				<header id="header">
 					<h1 id="logo"><a href="index.html">ISY</a></h1>
@@ -35,9 +62,16 @@
 					<div class="content">
 						<header>
 							<h2>INDU SHEKHAR YADAV</h2>
-							<p>Full Stack Developer Portfolio.<br />
-								Computer Science Student with Web Development Experience.
+							<p>Software Developer Portfolio.<br />
+								Tech Innovator | Full-Stack Dev. | AI/ML | Robotics Engineer | Building Scalable Solutions
 							</p>
+							</p>
+							<div class="music-player">
+								<button class="play-button" id="playPauseBtn">
+									<i class="fas fa-play"></i>
+								</button>
+								<span class="spotify-label">Listen to My Spotify</span>
+							</div>
 						</header>
 						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
 					</div>
@@ -52,21 +86,21 @@
 								<div class="col-4 col-12-medium">
 									<header>
 										<h2>Hello, I am Indu Shekhar Yadav</h2>
-										<p>Web Developer | CSE Student</p>
+										<p>Tech Innovator | Full-Stack Dev. | AI/ML | Robotics Engineer | Building Scalable Solutions</p>
 									</header>
 								</div>
 								<div class="col-4 col-12-medium">
-									<p>Greetings, Indu Shekhar Yadav! It's a pleasure that you visited. 
-										I delight in crafting digital wonders that come alive on the vast canvas of the internet. 
-										My passion for development was ignited in 2022. As I embarked on this journey, I serendipitously uncovered the realms of cybersecurity, machine learning, and web development.
-										Amidst this voyage of discovery, I found myself irresistibly drawn towards the enchanting world of web development. 
-										Like an artist wielding a brush, I painted my dreams onto the digital canvas, bringing forth vibrant and interactive creations that captivate hearts and minds alike.
+									<p>Hello there, I’m Indu Shekhar Yadav — welcome to my digital space!
+
+										My journey into tech began in 2022, and since then, it has been a thrilling ride across diverse landscapes — from cybersecurity and machine learning to full-stack web development. But among all, web development stood out as my true calling.
 										
+										What started as curiosity soon turned into a deep passion. Today, I architect powerful digital solutions — from AI-powered tools and chatbots to scalable web platforms and intelligent automation systems. Each project I’ve built, whether it’s an AI-driven robot or a dynamic social media app, reflects my commitment to turning ideas into functional, user-focused technology.
 									</p>
 								</div>
 								<div class="col-4 col-12-medium">
-									<p>As I journey forward, my spirit is aflame with an unquenchable thirst for growth and innovation. I strive to weave together the threads of imagination, code, and technology to manifest digital marvels that transcend the ordinary. 
-										Together, let us embark on a magnificent odyssey, where the boundaries of possibility are shattered and new realms of creativity are born.</p>
+									<p>I believe in blending creativity with logic designing systems that are not only efficient but also intuitive and impactful. As I move forward, I remain fueled by curiosity, learning, and a desire to innovate with code.
+										
+										Let’s explore how far we can push the boundaries of what’s possible, together.</p>
 								</div>
 							</div>
 						</div>
@@ -78,17 +112,16 @@
 
 			<!-- Two -->
 				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+					<span class="image fit main"><img src="images/bott.png" alt= "" style="filter: blur(1.2em);" /></span>
 					<div class="content">
 						<header>
-							<h2>Full Stack Development</h2>
-							<p>Replication of Amazon Using React</p>
+							<h2>Robotics Engineering</h2>
+							<p>AI Driven Omni-Directional Bot</p>
 						</header>
-						<p>Aspiring web developer with a passion for building exceptional online experiences. 
-							Replicated a  Amazon  Full Stack application using React and Firebase, replicating the functionality and user experience of the renowned e-commerce platform.
-							This project showcased a deep understanding of web development principles, strong problem-solving skills, and an ability to deliver high-quality applications. 
-							Through this experience, I honed my expertise in React and Firebase, solidifying my foundation in frontend and full-stack development
-						</p>
+						<p>Aspiring robotics engineer with a passion for intelligent, responsive control systems.
+							Built an AI-powered omnidirectional robot using Jetson Nano and Gemini AI, integrating natural language commands and a manual joystick interface for dual-input control.
+							This project demonstrated a deep understanding of robotics, AI integration, and prompt engineering for dynamic movement and decision-making.
+							Through this experience, I refined my skills in ROS, real-time simulation, and AI control logic, strengthening my foundation in intelligent autonomous systems.</p>
 						<ul class="actions">
 							<li><a href="project.html" class="button">Explore Projects</a></li>
 						</ul>
@@ -97,73 +130,136 @@
 						<i class="fas fa-chevron-up"></i>
 					</a>
 				</section>
+
 			<!-- Four -->
 				<section id="four" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
 							<h2>SKILLS</h2>
-							<p>Proficiency in more elaborate vocabulary.</p>
+							<p>Proficiency in more elaborate vocabulary and modern tech stacks.</p>
 						</header>
 						<div class="box alt">
 							<div class="row gtr-uniform">
+								<!-- HTML -->
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<div class="circle-container">
 										<section class="circle-content">
 											<span class="fa-brands fa-html5"></span>
 										</section>
 									</div>
-									<h3>HTML</HTML></h3>
-									<p>
-										HTML is the backbone of web development, allowing me to shape digital experiences with creativity and precision. 
-									</p>
+									<h3>HTML</h3>
+									<p>HTML is the backbone of web development, allowing me to shape digital experiences with creativity and precision.</p>
 								</section>
+								<!-- CSS -->
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<div class="circle-container">
 										<section class="circle-content">
 											<span class="fa-brands fa-css3-alt"></span>
 										</section>
-									</div>									
+									</div>
 									<h3>CSS</h3>
 									<p>CSS is my artistic partner in web development, empowering me to craft captivating designs and breathe life into digital interfaces.</p>
-
 								</section>
+								<!-- JavaScript -->
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<div class="circle-container">
 										<section class="circle-content">
 											<span class="fa-brands fa-js"></span>
 										</section>
-									</div>									
-									<h3>JAVASCRIPT</h3>
+									</div>
+									<h3>JavaScript</h3>
 									<p>JavaScript is the language that fuels my passion for web development, empowering me to add interactivity and functionality to websites and applications.</p>
 								</section>
+								<!-- React -->
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<div class="circle-container">
 										<section class="circle-content">
 											<span class="fa-brands fa-react"></span>
 										</section>
-									</div>									
-									<h3>REACT</h3>
+									</div>
+									<h3>React</h3>
 									<p>React is the engine that drives my web development journey, enabling me to build scalable and interactive applications with ease.</p>
 								</section>
+								<!-- Database -->
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<div class="circle-container">
 										<section class="circle-content">
 											<span class="fa-solid fa-database"></span>
 										</section>
-									</div>									
-									<h3>DATABASE</h3>
-									<p>Firebase database is my reliable partner in storing and managing data for web and mobile applications, simplifying the backend infrastructure and allowing me to focus on creating seamless user experiences.</p>
+									</div>
+									<h3>Database</h3>
+									<p>Firebase database is my reliable partner in storing and managing data for web and mobile applications, simplifying backend infrastructure.</p>
 								</section>
+								<!-- Java -->
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<div class="circle-container">
 										<section class="circle-content">
 											<span class="fa-brands fa-java"></span>
 										</section>
-									</div>									
-									<h3>JAVA</h3>
+									</div>
+									<h3>Java</h3>
 									<p>Java is the bedrock of my programming journey, serving as my primary language of choice for its versatility and scalability.</p>
 								</section>
-								
+								<!-- Python -->
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<div class="circle-container">
+										<section class="circle-content">
+											<span class="fa-brands fa-python"></span>
+										</section>
+									</div>
+									<h3>Python</h3>
+									<p>Python empowers my AI/ML projects, offering simplicity and power to bring intelligent solutions to life.</p>
+								</section>
+								<!-- Node.js -->
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<div class="circle-container">
+										<section class="circle-content">
+											<span class="fa-brands fa-node-js"></span>
+										</section>
+									</div>
+									<h3>Node.js</h3>
+									<p>Node.js is my backend powerhouse, enabling me to build fast, scalable network applications with JavaScript runtime efficiency.</p>
+								</section>
+								<!-- MongoDB -->
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<div class="circle-container">
+										<section class="circle-content">
+											<span class="fa-solid fa-leaf"></span>
+										</section>
+									</div>
+									<h3>MongoDB</h3>
+									<p>MongoDB is my go-to NoSQL database for creating flexible, high-performance applications with dynamic data structures.</p>
+								</section>
+								<!-- AWS -->
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<div class="circle-container">
+										<section class="circle-content">
+											<span class="fa-brands fa-aws"></span>
+										</section>
+									</div>
+									<h3>AWS</h3>
+									<p>AWS is my cloud partner, helping me deploy secure, scalable, and resilient applications globally with ease.</p>
+								</section>
+								<!-- GitHub -->
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<div class="circle-container">
+										<section class="circle-content">
+											<span class="fa-brands fa-github"></span>
+										</section>
+									</div>
+									<h3>GitHub</h3>
+									<p>GitHub is my collaborative space, enabling streamlined version control, open-source contributions, and project management.</p>
+								</section>
+								<!-- Docker -->
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<div class="circle-container">
+										<section class="circle-content">
+											<span class="fa-brands fa-docker"></span>
+										</section>
+									</div>
+									<h3>Docker</h3>
+									<p>Docker helps me containerize applications efficiently, ensuring consistency across environments and simplifying deployment workflows.</p>
+								</section>
 							</div>
 						</div>
 						<footer class="major">
@@ -173,18 +269,14 @@
 						</footer>
 					</div>
 				</section>
-
 			<!-- Five -->
 				<section id="five" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
 							<h2>GET IN TOUCH</h2>
-							
-							<p> I look forward to connecting with you and engaging in meaningful discussions.</p>
-							<div><a href="mailto:shekharindu21@gmail.com" target="_blank" class="col-4 col-12-xsmall"><input type="submit" value="Send me a mail" /></a></div></div>
-
+							<p>I look forward to connecting with you and engaging in meaningful discussions.</p>
+							<div><a href="mailto:shekharindu21@gmail.com" target="_blank" class="col-4 col-12-xsmall"><input type="submit" value="Send me a mail" /></a></div>
 						</header>
-						
 					</div>
 				</section>
 
@@ -193,28 +285,50 @@
 					<ul class="icons">
 						<li><a href="https://twitter.com/InduShekhar21" target="_blank" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="https://www.linkedin.com/in/indu-shekhar-550387245/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://instagram.com/eennduu?igshid=MjEwN2IyYWYwYw==" target="_blank"class="icon brands alt fa-instagram" ><span class="label">Instagram</span></a></li>
+						<li><a href="https://instagram.com/eennduu?igshid=MjEwN2IyYWYwYw==" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="https://github.com/indu-shekhar-yadav" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: indu-shekhar-yadav</a></li>
+						<li>© Untitled. All rights reserved.</li><li>Design: indu-shekhar-yadav</li>
 					</ul>
 				</footer>
-			
 		</div>
-			<a href="#" class="to-top">
-				<i class="fas fa-chevron-up"></i>
-		  	</a>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-			
+		<audio id="backgroundMusic" src="assets/audio/mysong.mp3"></audio>
+		<a href="#" class="to-top">
+			<i class="fas fa-chevron-up"></i>
+		</a>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+		<script>
+			const audio = document.getElementById('backgroundMusic');
+			const playPauseBtn = document.getElementById('playPauseBtn');
+			const playPauseIcon = playPauseBtn.querySelector('i');
 
+			playPauseBtn.addEventListener('click', () => {
+				if (audio.paused) {
+					audio.play();
+					playPauseIcon.classList.remove('fa-play');
+					playPauseIcon.classList.add('fa-pause');
+				} else {
+					audio.pause();
+					playPauseIcon.classList.remove('fa-pause');
+					playPauseIcon.classList.add('fa-play');
+				}
+			});
+
+			// Ensure audio stops when it ends
+			audio.addEventListener('ended', () => {
+				audio.currentTime = 0;
+				playPauseIcon.classList.remove('fa-pause');
+				playPauseIcon.classList.add('fa-play');
+			});
+		</script>
 	</body>
 </html>

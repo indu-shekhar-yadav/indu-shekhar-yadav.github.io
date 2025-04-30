@@ -1,0 +1,65 @@
+/* assets/css/project.css */
+
+.timeline {
+    position: relative;
+    padding-left: 100px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 60px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #e44c65;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-year {
+    position: absolute;
+    left: -80px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #1c1d26;
+    color: rgba(255, 255, 255, 0.507);
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 54px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 2px solid #e44c65;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 60px;
+    }
+    .timeline::before {
+        left: 30px;
+    }
+    .timeline-year {
+        left: -50px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+    .timeline-marker {
+        left: 24px;
+    }
+}
